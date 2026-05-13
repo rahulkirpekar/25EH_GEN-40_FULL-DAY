@@ -1,0 +1,34 @@
+
+    eclipse-workspace
+	    |	
+	java-project
+	-------------
+	    |
+	    --src
+	        |
+		basic
+		  |
+		   ---TestApp1.java
+	    --bin(class files)
+	        |
+		basic
+		  |
+		   ---TestApp1.class
+
+	
+
+
+
+Inheritance:- To reuse the code / code Reusibility
+--------------
+
+				Type of Inheritance
+				-------------------
+1. Single 	2. Multilevel		3. Hierarchial		4. Multiple	5. Hybrid
+
+	
+     Person(name)
+	|
+    Student(rno,std,marks)
+
+

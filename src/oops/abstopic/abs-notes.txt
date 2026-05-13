@@ -1,0 +1,116 @@
+Abstraction:- To Increase Security of Application. 
+------------
+
+		Type of Abstraction
+		-------------------
+
+----------------			--------------------
+1. 0% to 100%				2. 100% Abstraction
+----------------			--------------------
+  Abstract class			interface(pure abstraction)
+
+Abstraction:-
+-------------
+		    [Abstract class]
+			  |
+			Person( public abstract void getBehave();// Abstract Method)
+			  |
+  -----------------------------------------------------------------------
+  |			|			|			|
+School		       Org		   PublicPlace		       Home	
+  |			|			|			|
+getBehave()	    getBehave()		   getBehave()		   getBehave()		     
+  |			|			|			|		
+Student		      Employee              Citizen		      Home	
+
+	Person person = null;
+
+
+	person = new Home();
+	person.getBehave();
+
+---------------------------------
+2. interface(100% Abstraction)
+---------------------------------
+
+	1. Constant Varaibles(public static final)
+
+	2. Member Function
+		1. abstract methods(public abstract)
+		2. Non-abstract methods(private(Java-9),default(Java-8) as keyword,static(Java-8))
+
+	interface		class			interface		class
+	   |--implements  	 |--extends		  |--extends		  |---X(Not Possible in Java)	
+	 class			class			interface		interface
+
+				Type of interface
+				------------------
+1. Simple Interface:-
+--------------------
+	1. Constant Varaibles	
+	2. Member Function
+		1. abstract methods(public abstract)--Multiple Abstract methods
+		2. Non-abstract methods(private(Java-9),default(Java-8) as keyword,static(Java-8))
+
+
+    SAM RULE(Single Abstract Method)	
+   	|
+2. Functional Interface:- lambda function-----[For use of Stream API]---[Funcational Programming Language]
+-------------------------
+	1. Constant Varaibles	
+	2. Member Function
+		1. abstract methods(public abstract)--[Single Abstract method]--->[lambda function]
+		2. Non-abstract methods(private(Java-9),default(Java-8) as keyword,static(Java-8))
+
+3. Marker/Tagged Interface(Built-In Interface---Serializable(Interface)):- X
+---------------------------
+public interface Serializable
+{
+}
+
+
+Funcational Programming Language:-
+----------------------------------
+	int no;
+	no = 10;
+
+
+	variable = To store Defination of Function
+
+
+	test = void addFun()
+		{
+			int no1,,no2,ans;
+			no1 = 10;
+			no2 = 20;
+			ans = no1+no2;
+			print ans;
+		}
+
+
+
+public interface A
+{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

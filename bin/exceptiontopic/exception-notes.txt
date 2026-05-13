@@ -1,0 +1,204 @@
+Exception:-  Abnormal Scenarios ===> JVM Execution Abnormal Terminate.
+------------
+
+1. ArithmeticException:-
+--------------------------
+
+	10 / 0 ; // Code Crashed
+
+2. ArrayIndexoutofBoundException:-
+---------------------------------------
+
+	int a[] = new int[5]; // a[0],a[1],a[2],a[3],a[4]
+
+	a[5] = 10;// ArrayIndexoutofBoundException
+
+3. StringIndexoutofBoundException:-
+------------------------------------
+
+	String name = "royal";// 0--r , 1--0 ,... , 4---l
+
+	SOP(name.charAt(name.length()));// StringIndexoutofBoundException
+
+4. NullPointerException:-
+--------------------------
+	String name = null;
+
+	SOP(name.length());// NullPointerException
+
+5. NumberFormateException:-
+--------------------------------
+
+	String value = "royal";
+
+	SOP(value + 100);// royal100
+
+	int no = Integer.parseInt(value);// NumberFormateException
+
+	SOP(no + 100);// 223
+
+
+
+
+
+6. ClassCastException :-
+-----------------------------
+
+		A
+		|
+	-----------------
+	|		|
+	B		C
+
+	A objA = new B();
+
+	C objC = (C)objA;// ClassCastException
+
+	
+
+
+				Type of Exception
+				------------------
+	1. Checked Exception				2. UnChecked Exception
+	----------------------				-----------------------
+	Compiletime--Compiler				Runtime---JVM
+	
+===> SQLException					
+===> ClassNotFoundException
+===> FileNotFoundException
+....
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+					Hierarchy of Exception
+					-----------------------
+
+						Throwable(C)
+						    |	
+						Exception(C)
+						    |	
+		-------------------------------------------------------------------------
+		|--Checked Exception							|--UnChecked Exception
+	--SQLException								RuntimeException(C)
+	--FileNotFoundException								|
+	--ClassNotFoundException						--ArithmeticException
+										--ArrayIndexoutofBoundException
+										--StringIndexoutofBoundException
+										--ArrayIndexoutofBoundException
+										--NullPointerException
+										--NumberFormateException
+										--ClassCastException ,...
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Exception Handling :-  try,catch,finally
+--------------------
+
+	
+	try
+	{
+		// raise Exception By Java code---ArithmeticException
+	}
+	catch(NullException e)
+	{
+	}
+------------------------------------------
+	try
+	{
+	}
+	catch()
+	{
+	}
+	finally
+	{
+		// Connection(Database / Socket / File) close
+	}
+------------------------------------------
+	try
+	{
+	}
+	catch()
+	{
+	}catch()
+	{
+	}
+	finally
+	{
+	}
+------------------------------------------
+	try
+	{
+	}
+	finally
+	{
+	}
+------------------------------------------
+	
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	1. throw
+	2. throws
+	3. custom exception(User Defined Exception)
+	4. Rule of Method Overridding with Exception
+-------------------------------------------------------------
+
+	==> IO
+	==> Innerclass
+	==> Collection 
+	==> Multi Threadding 
+	==> JDBC(MySQL)
+	==> Lambda + Stream API
+-------------------------------------------------------------
+Advanced Java
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+				Modifiers
+	1. Access Modifiers			2. Non-Modifiers
+	-----------------------			-----------------------		
+	1. private				1. static
+	2. Java Default Scope			2. abstract
+	3. protected				3. final
+	4. public				4. synchronized
+						5. transient	
+						6. Serializable
+
+static(Non-Access Modifiers):-
+-----------------------------
+	1. local variable----X
+	2. Dm's--------------YES
+	3. member function---YES
+	4. class(Innerclass)-YES
+
+
+
+// Outer class
+class A
+{
+	// Member Innerclass---Nested Innerclass
+	static class B
+	{
+
+	}
+}
+
+	
+
+Student---500---3 // 500 * 122 = 56,000 Bytes
+		 //  500 * 62  = 31,000 Bytes
+
+
+	int rno;// 4
+	String name;// 50
+	int std;// 4
+	int marks;// 4
+	static String schoolName;// 50 Byte// class level memory allocation
+-----------------------------------------------------------------------------
+	 62			62			62
+	 s1			s2			s3
+	-----------------------------------------------------------------
+	rno		|	rno		|	rno		|---UNIQUE(Per Object Memory Allocation)
+	name		|	name		|	name		|---UNIQUE(Per Object Memory Allocation)
+	std		|	std		|	std		|---UNIQUE(Per Object Memory Allocation)
+	marks		|	marks		|	marks		|---UNIQUE(Per Object Memory Allocation)
+	-----------------------------------------------------------------
+				  |
+				schoolName="ABC"			|---GENERAL(Class---One Copy)--50 Byte// class level memory allocation
+	// staticway
+	Student.schoolName = "DPS";
+
+	s1.schoolName = "ABC";	
+
+	SOP(s2.schoolName);// ABC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+

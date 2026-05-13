@@ -1,0 +1,121 @@
+Polymorphism:- Ability to take more than one form(method)
+--------------
+		Type of Polymorphism
+		---------------------
+
+1. CompileTime					2. RunTime
+----------------				----------------
+==> static Binding				==> Dynamic Binding
+==> Early Binding				==> Late Binding	
+
+Example:-				Example:-
+---------				---------
+	Method Overloadding			Method Overridding
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			1. UPI
+			2. BankAccount Online transfer
+	payment---	3. Wallate
+			4. cheque
+
+
+
+Type Conversion:-
+-----------------
+	boolean---X
+
+
+		byte
+		 |
+		short
+		 |
+char----------->int		
+		 |
+		long
+		 |
+		float
+		 |
+		double
+
+
+Runtime Polymorphism:-
+-----------------------
+
+				Z
+				|
+				A(Parent Class)
+				|
+		----------------------------------
+		|		|		|
+		B		C		D	
+	(Child Class)
+
+
+	// A obj = new A();
+
+	
+	A obj = new B();
+
+	obj = new C();
+
+	obj = new D();
+	
+					Person--(void getBehave(){... Human....})
+				 	  |
+	-------------------------------------------------------------------------
+	|			 |			|			|	
+     School		        Org		     PublicPlace	       Home
+    getBehave()                getBehave()            getBehave()             getBehave()	
+	|			 |			|			|	
+     Student		     Employee		     Citizen		      Child
+
+
+Person person = new Person();
+person.getBehave();
+-----------------------------------
+person = new School();
+person.getBehave();// Student
+-----------------------------------
+person = new Org();
+person.getBehave();// Employee
+-----------------------------------
+person = new PublicPlace();
+person.getBehave();// Citizen
+-----------------------------------
+person = new Home();
+person.getBehave();// Child
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+

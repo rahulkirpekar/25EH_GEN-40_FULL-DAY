@@ -1,0 +1,168 @@
+char ----
+	1. char value = sc.next().charAt(0);
+	2. char value = (char)System.in.read();// A----65--->char
+   
+String---Multiple Characters:-
+------------------------------
+
+	1. sc.next();// Single word
+	2. sc.nextLine();// Multiple words
+----------------------------------------------------------------------------------------------------------
+
+			Ways to operate String in Java
+			-------------------------------
+1.  Immutable Way					2.  Mutable Way
+------------------					------------------
+	===> String(java.lang.String--class)		===> StringBuilder
+							===> StringBuffer
+
+
+Immutable Way (String(java.lang.String--class)):-
+------------------------------------------------
+	
+	String is Special class
+		1. Immutable Behaviour
+		2. String --By String LiteralWay
+	------------------------------------------------------------
+
+Ways to Create String class Object :-
+------------------------------------
+
+	1. By String Literal Way [ RAM----HEAP-----SCP(String Constant Pool)] :-
+	----------------------------------------------------------------------
+		
+		String name1 = "royal";
+		String name2 = "royal";
+		String name3 = "technosoft";
+		
+			//     royaltechnosoft 
+		String name4 = name1 + name3;
+
+		String name5 = name1;
+
+		String name6 = "info";
+
+		name1 = name1.concat(name6);// royalinfo
+/--------
+
+Object(String ) Equality:-
+--------------------------
+		1. referenceBased(==)			2. Value Based(.equals())
+		--------------------			--------------------------
+		SOP(name1==name2);// false		SOP(name1.equals(name2);// false
+		SOP(name1==name3);// false		SOP(name1.equals(name3);// false
+		SOP(name1==name4);// false		SOP(name1.equals(name4);// false
+		SOP(name1==name5);// false		SOP(name1.equals(name5);// false
+		SOP(name1==name6);// false		SOP(name1.equals(name6);// false
+		SOP(name2==name3);// false 		SOP(name2.equals(name3);// false
+		SOP(name2==name4);// false 		SOP(name2.equals(name4);// false
+		SOP(name2==name5);// true		SOP(name2.equals(name5);// true
+		SOP(name2==name6);// false		SOP(name2.equals(name6);// false
+		SOP(name3==name4);// false		SOP(name3.equals(name4);// false 
+		SOP(name3==name5);// false		SOP(name3.equals(name5);// false
+		SOP(name3==name6);// false		SOP(name3.equals(name6);// false 
+		SOP(name4==name5);// false		SOP(name4.equals(name5);// false 
+		SOP(name4==name6);// false		SOP(name4.equals(name6);// false
+		SOP(name5==name6);// false		SOP(name5.equals(name6);// false
+
+
+	
+
+	2. By 'new' Keyword Way [RAM----HEAP]:-
+	-----------------------------------------------------------
+
+	String name7 = new String("iit");
+	String name8 = new String("iit");
+	String name9 = new String("royal");
+	String name10 = name7;
+
+
+
+Object(String ) Equality:-
+--------------------------
+		1. referenceBased(==)			2. Value Based(.equals())
+		--------------------			--------------------------
+		
+		SOP(name7==name8);// false		SOP(name7.equals(name8));// true	
+		SOP(name7==name9);// false		SOP(name7.equals(name9));// false	
+		SOP(name7==name10);// true		SOP(name7.equals(name10));// true
+		SOP(name8==name9);// false		SOP(name8.equals(name9));// false
+		SOP(name8==name10);// false		SOP(name8.equals(name10));// true
+		SOP(name9==name10);// false		SOP(name9.equals(name10));// false
+
+
+
+
+
+
+
+
+
+2.  Mutable Way:-
+---------------------
+		
+	===> StringBuilder
+	===> StringBuffer(Multi Threadding)
+
+
+
+		
+	
+	
+
+
+
+
+
+
+			String					StringBuilder		
+								StringBuffer
+			  |
+			concat	------------------------------->append()
+			  X					reverse()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 name[0] name[1] name[2] name[3] name[4]
+	-----------------------------------------
+	|  m	|  a	|  d	|  a	|  m	|
+	-----------------------------------------
+	   i				   j(name.length()-1) 	
+
+	boolean flag = true;
+	for(int i = 0 , j = (name.length()-1) ; i < name.length() ; i++ , j--)
+	{
+		if( name.charAt(i) != name.charAt(j) )
+		{
+			flag = false;
+			break;
+		}
+	}
+	if(true)
+	{
+		SOP(name+" is Palindrome.");
+	}else
+	{
+		SOP(name+" is not Palindrome.");
+	}
+
+
+
+
+
+
+
+
