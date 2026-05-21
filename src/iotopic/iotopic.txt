@@ -1,0 +1,69 @@
+IO :- InputStream / OutputStream / ErrorStream
+-------------------------------------
+
+	stream---Buffer Area
+
+	System.out.println("Hello World");
+
+			     OutputStream
+				write				
+	Java Program(Data)------------------------->Console/File/Socket
+
+
+			        InputStream
+				   read				
+	Java Program(Data)<-------------------------Console/File/Socket
+
+
+Ways to write and read with file:-
+-----------------------------------
+
+
+Data Type:-
+----------
+
+		1. String			2. Object(Employee/Product/Student)--user Defined class Objects	
+
+
+1. ByteOrientedway:-
+------------------------------------
+
+	1. String	
+
+		1. write(FileOutputStream)
+		2. read(FileInputStream)
+
+
+		
+	2. Object(Employee/Product/Student)--user Defined class Objects	
+
+
+2. Character Orientedway:-
+------------------------------------
+	1. String
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

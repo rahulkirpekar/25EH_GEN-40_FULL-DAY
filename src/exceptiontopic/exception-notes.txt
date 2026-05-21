@@ -134,29 +134,44 @@ Exception Handling :-  try,catch,finally
 	}
 ------------------------------------------
 	
-
-	
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	1. throw
 	2. throws
 	3. custom exception(User Defined Exception)
 	4. Rule of Method Overridding with Exception
 -------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	==> IO
 	==> Innerclass
@@ -193,6 +208,83 @@ Advanced Java
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rules of Exception Handling with Method Overriding
+======================================================
+
+There are many rules if we talk about method overriding with exception handling.
+
+Some of the rules are listed below:
+
+1. If the superclass method does not declare an exception
+=========================================================
+	===>subclass overridden method cannot declare the checked exception 
+	but it can declare unchecked exception.
+
+
+2. If the superclass method declares an exception
+=========================================================
+	===>subclass overridden method can declare same, 
+	
+	===>subclass exception or 
+	
+	===>no exception but 
+	
+	===>cannot declare parent exception.
 
 
 
