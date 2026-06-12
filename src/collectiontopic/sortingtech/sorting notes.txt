@@ -1,0 +1,33 @@
+Data:-
+---------
+
+Sorting:-
+----------------
+
+	Collection--Interface
+	Collections--class
+
+	list--primitive /String
+
+	Collections.sort(list);
+
+	1. Primitive
+	2. String
+
+	3. Objects(Product/Employee/Student/...)--Sorting Techniques
+
+List	Set		Queue		Map
+	 |		 |		 |
+	TreeSet    PriorityQueue	TreeMap
+
+
+Sorting Techniques:-
+---------------------
+
+	1. Comparable(I)
+
+		compareTo(Object obj)
+
+	2. Comparator(I)
+
+		compare(Object o1,Object o2)
