@@ -1,0 +1,68 @@
+JDBC - Java to Database Connectivity
+--------------------------------------
+     Driver.class	     Driver.class	  	
+	  |			  |
+    mysql-connector.jar		odbc.jar
+	  |			  |
+	mysql			oracle
+
+
+URLNAME-------jdbc:mysql://localhost:3306/25eh_gen_40_fullday_hmt_db;
+DRIVERCLASS---Driver.class
+
+USERNAME - root
+PASSWORD - root
+
+
+			DBConnection
+	Java Program---------------------->Database
+
+
+Dao - Data Access Object
+---------------------------
+
+	StudentDao
+
+
+
+
+1. Statement(I)(CRUD)
+	|
+2. PreparedStatement(I)(CRUD)
+
+
+
+	
+	  Statement/PreparedStatement	
+		    |
+	------------------------------
+	  |			  |	
+int---executeUpdate()	   executeQuery()---ResultSet(Multiple Rows)	
+	  |			  |
+	insert			select
+	update
+	delete
+
+
+
+
+POJO - Plain Old Java Object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

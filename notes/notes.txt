@@ -32,3 +32,26 @@ Inheritance:- To reuse the code / code Reusibility
     Student(rno,std,marks)
 
 
+JDBC - Java to Database Connectivity
+------------------------------------
+
+
+	Java--objects---RAM(Tempo...)
+
+			Data	
+	JavaProgram---------------->Database(Store)---MySQL
+
+
+	1. Database Connection
+
+
+	SQL queries------>Database
+
+CREATE TABLE student
+(
+	rno int primary key AUTO_INCREMENT,
+	name varchar(50),
+	std int,
+	marks int
+);
+
