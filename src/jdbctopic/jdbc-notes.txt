@@ -16,6 +16,7 @@ PASSWORD - root
 
 			DBConnection
 	Java Program---------------------->Database
+md
 
 
 Dao - Data Access Object

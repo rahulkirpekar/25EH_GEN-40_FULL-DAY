@@ -14,13 +14,12 @@ public class StudentBean
 	public StudentBean() 
 	{
 	}
-	
 	public StudentBean(int rno, String name, int std, int marks) 
 	{
 		this.rno = rno;
 		this.name = name;
 		this.std = std;
-		this.marks = marks;
+		this.marks = marks;	
 	}
 
 	public int getRno() {
