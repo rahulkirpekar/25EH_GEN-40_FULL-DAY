@@ -8,6 +8,11 @@ public class TestApp4
 	public static void main(String[] args) 
 	{
 		Student s1= new Student(1, "Ankur", 12, 100);
+		
+		s1.toString();
+		
+		
+		
 		Student s2= new Student(2, "Rahul", 10, 90);
 		Student s3= new Student(3, "Sagar", 11, 80);
 		Student s4= new Student(4, "Kunal", 9, 95);

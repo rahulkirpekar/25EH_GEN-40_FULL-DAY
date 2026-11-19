@@ -1,0 +1,62 @@
+Thread :- Process -- sub-process
+----------
+
+Multi-Threadding:-
+------------------
+
+	1	11
+	2	12
+	3	13
+	4	14
+	5	15
+	6	16	
+	7	17
+	8	18
+	9	19
+	10	20
+
+
+Ways to Create Thread in Java:-
+------------------------------
+
+	1. By extending Thread class
+	------------------------------
+
+	Runnable(I)---abstract method---run()
+	   |	
+	Thread(C)---run()--X
+	   |	
+	MyThread1(Class)--run method overridde---job define 
+
+class MyThread1 extends Thread 
+{
+
+}
+
+
+
+
+
+	2. By implementing Runnable Interface.
+
+
+
+Thread Life Cycle:-
+-------------------
+MyThread1 myThread1 = new MyThread1();
+
+myThread1.start();// myThread---Thread 
+
+
+	start()
+	  |
+       Runnable(Queue)<-----------------------|
+	  |				      |
+	  |				Non-Runnable
+	  |				      |
+       Running(run()----sleep(),wait()...)----|	
+	  |
+       Terminate	
+
+	
+	

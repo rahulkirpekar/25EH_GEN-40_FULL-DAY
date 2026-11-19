@@ -49,7 +49,12 @@ public class Student
 	public void setMarks(int marks) {
 		this.marks = marks;
 	}
-	
+	 /**
+     * Returns a string representation of the object.
+     * @author Rahul Kirpekar
+     * @since 2026
+     * @return  a Student Attributes value as String.
+     */
 	@Override
 	public String toString() 
 	{

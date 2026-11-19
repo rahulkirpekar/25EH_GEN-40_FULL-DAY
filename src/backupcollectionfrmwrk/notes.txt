@@ -1,0 +1,54 @@
+Array Limitations:-
+--------------------
+	int a[] = new int[5];
+
+	1. TYPE
+	2. SIZE
+
+
+Collection Framework:- To overcome Array Limitations.
+----------------------
+
+			Hierarchy of Collection [import java.util.*]
+			------------------------
+
+				Iterable(I)--------------------------------------------------------------
+				   |									|
+				Collection(I)								|
+				   |									|
+				   |Data---Value							|
+				   |									|(Key,Value)
+	---------------------------------------------------------					|
+	|			   |				|					|
+     List(I)			Set(I)			     Queue(I)				       Map(I)						
+	|			   |				|					|
+AbstractList(AC)	   AbstractSet(AC)		 AbstractQueue(AC)			  AbstractMap(AC)							
+	|			   |				|					|
+--ArrayList(C)		--HashSet(C)			--PrriorityQueue(C)			--HashMap(C)
+--LinkedList(C)		--LinkedHashSet(C)							--LinkedHashMap(C)	
+--Vector(C)		--TreeSet(C)								--TreeMap(C)
+
+
+
+List(I) Features:-
+------------------
+	--> Maintain Insertion Order
+	--> can access value by randomely 
+	--> allow to store duplicate values.
+
+
+
+
+			      Object(toString()--Object--Hashcode)
+				 |
+	  	Primitive      Wrapper 
+		DataType       classes
+		  |		 |
+		boolean--------Boolean(toString()--value)
+		byte-----------Byte(toString()--value)
+		char-----------Character(toString()--value)
+		short----------Short(toString()--value)
+		int------------Integer(toString()--value)
+		long-----------Long(toString()--value)
+		float----------Float(toString()--value)
+		double---------Double(toString()--value)
