@@ -1,0 +1,248 @@
+			Type of Interface
+			------------------
+1. Normal Interface		2. Functional Interface		3. Marker/Tagged Interface
+---------------------		------------------------	---------------------------
+				@Functional Interface
+
+-->Dm's[public static final]	-->Dm's[public static final](1+)	
+
+-->Mf's				-->Mf's
+
+ -->AM[public abstract(1+)]	    -->AM[public abstract(1)]	
+				   SAM RULE[Single Abstract Method]	
+
+ -->NAM				    -->NAM    	
+   --> static(1+)			   --> static(1+)	
+   --> default(1+)			   --> default(1+)
+   --> private(1+)			   --> private(1+)
+----------------------------------------------------------------------------------------------------------------------
+
+Type of Function:-
+----------------
+	1. NR-NA
+	2. WR-NA
+	3. NR-WA
+	4. WR-WA
+-------------------------------------------------------------------------------------------------------------------
+Function:-
+-----------
+
+	        scope returnType funName(arguments)
+		{
+			operation
+		}
+
+Lambda Function:-
+----------------------
+		 X 	  X	   X
+	        scope returnType funName(arguments) ->
+						{
+							operation;
+						};
+-------------------------------------------------------------------------------------------------------------------
+1. NR-NA :-
+---------
+	public void addFun()
+	{
+		Scanner sc = new Scanner(System.in);
+		int no1,no2,ans;
+		SOP("\nEnter NO1 : ");
+		no1 = sc.nextInt();
+		SOP("\nEnter NO2 : ");
+		no2 = sc.nextInt();
+
+		ans = no1 + no2;
+
+		SOP("Addition : "+ans);
+	}
+
+1. Lambda NR-NA Function :-
+----------------------------
+
+	() ->
+	{
+		Scanner sc = new Scanner(System.in);
+		int no1,no2,ans;
+		SOP("\nEnter NO1 : ");
+		no1 = sc.nextInt();
+		SOP("\nEnter NO2 : ");
+		no2 = sc.nextInt();
+
+		ans = no1 + no2;
+
+		SOP("Addition : "+ans);
+	};
+-------------------------------------------------------------------------------------------------------------------
+2. NR-WA :-
+---------
+	public void addFun(int no1,int no2)
+	{
+		int ans;
+
+		ans = no1 + no2;
+
+		SOP("Addition : "+ans);
+	}
+
+2. Lambda NR-WA Function :-
+----------------------------
+
+	(int no1,int no2) ->
+	{
+		int ans;
+
+		ans = no1 + no2;
+
+		SOP("Addition : "+ans);
+	};
+------------------
+	(no1,no2) ->
+	{
+		int ans;
+
+		ans = no1 + no2;
+
+		SOP("Addition : "+ans);
+	};
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+3. WR-NA :-
+-----------
+	public int addFun()
+	{
+		Scanner sc = new Scanner(System.in);
+		int no1,no2,ans;
+		SOP("\nEnter NO1 : ");
+		no1 = sc.nextInt();
+		SOP("\nEnter NO2 : ");
+		no2 = sc.nextInt();
+
+		ans = no1 + no2;
+
+		return ans;
+	}
+
+3. Lambda WR-NA Function :-
+----------------------------
+	() ->
+	{
+		Scanner sc = new Scanner(System.in);
+		int no1,no2,ans;
+		SOP("\nEnter NO1 : ");
+		no1 = sc.nextInt();
+		SOP("\nEnter NO2 : ");
+		no2 = sc.nextInt();
+
+		ans = no1 + no2;
+
+		return ans;
+	};
+-------------------------------------------------------------------------------------------------------------------
+4. WR-WA :-
+-----------
+	public int addFun(int no1,int no2)
+	{
+		int ans;
+
+		ans = no1 + no2;
+
+		return ans;
+	}
+4. Lambda WR-WA Function :-
+----------------------------
+	(int no1,int no2) ->
+	{
+		int ans;
+
+		ans = no1 + no2;
+
+		return ans;
+	};
+-------------------------------
+	(no1,no2) ->
+	{
+		return (no1 + no2);
+	};
+-------------------------------
+	(no1,no2) -> (no1 + no2);
+--------------------------------------------------------------------------------------
+
+
+Functional Interface  ==> (SAM)Abstract Method ===> Lambda function		 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+			
+
+
+
+
+
+
+
+
+
+
+
+Lambda Function:-
+------------------

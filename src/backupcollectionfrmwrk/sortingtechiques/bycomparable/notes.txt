@@ -1,0 +1,44 @@
+list
+	ArrayList
+	LinkedList
+	Vector
+
+
+	Collection(I)
+	Collections(class)
+		1.sort()--one argument
+		2.sort()--two argument
+
+sorting-->marks
+ |
+500 Student(rno name std marks)
+
+	Sorting Techniques
+	-------------------
+	1. Comparable(I)
+		compareTo(Object obj)
+
+	2. Comparator(I)
+		compare(Object obj1,Object obj2)
+
+
+
+
+-----------------------------
+Set
+	HashSet
+	LinkedHashSet
+	TreeSet---Sorting class
+-----------------------------
+Queue
+	PriorityQueue---Natural Ordering
+-----------------------------
+Map(Key,Value) :-
+
+	Entry(Key,Value)
+		1. HashMap--Key
+		2. LinkedHashMap--Key
+		3. TreeMap--Key-----Sorting class
+
+
+
